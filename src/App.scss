@@ -1,0 +1,15 @@
+@import './sass/variable';
+
+.game-container{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255,61,117);
+    background: linear-gradient(144deg, rgba($color__fire,1) 35%, rgba($color__pink,1) 100%);
+
+    & > *{
+        margin: 3rem 0;
+    }
+}

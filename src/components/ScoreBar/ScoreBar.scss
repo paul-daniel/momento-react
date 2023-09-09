@@ -1,0 +1,31 @@
+@import '../../sass/variable';
+
+.scoreBar{
+    background-color: $color__hidden__side;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-around;
+    width: 90rem;
+    padding: 2rem;
+    font-family: Helvetica, sans-serif;
+    
+
+    &__wins{
+        font-size: 3rem;
+        color: rgba($color__fire,.8);
+    }
+
+    &__title{
+        font-size: 3.5rem;
+        color: $color__fire;
+    }
+
+    &__new{
+        border:none;
+        background-color: white;
+        border-radius: 5px;
+        padding : 5px 10px;
+        font-family: Helvetica, sans-serif;
+        font-size: 2rem;
+    }
+}
