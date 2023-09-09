@@ -1,15 +1,18 @@
-import {useState} from 'react'
-
 import './ScoreBar.scss'
+import state from '../../store'
+import { useSnapshot } from 'valtio'
 
 function ScoreBar() {
-  const [score, setScore] = useState(0)
+  const snap = useSnapshot(state)
 
+  const newGame = () => {
+    state.newGame = true
+  }
   return (
     <div className='scoreBar'>
-      <p className='scoreBar__wins'>{score} wins</p>
+      <p className='scoreBar__wins'>SCORE: {snap.score}</p>
       <h1 className='scoreBar__title'>Memory Game</h1>
-      <button className='scoreBar__new'>New Game</button>
+      <button className='scoreBar__new' onClick={newGame}>New Game</button>
     </div>
   )
 }

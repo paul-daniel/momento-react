@@ -23,9 +23,15 @@
     &__new{
         border:none;
         background-color: white;
-        border-radius: 5px;
-        padding : 5px 10px;
+        border-radius: .5rem;
+        padding : .5rem 1rem;
         font-family: Helvetica, sans-serif;
         font-size: 2rem;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+
+        &:hover{
+            filter: brightness(80%);
+        }
     }
 }

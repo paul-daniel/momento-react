@@ -30,8 +30,14 @@
     & .hidden__rotate{
         transform: rotateY(180deg);
     }
+    & .hidden__side.perma__rotate{
+        transform: rotateY(180deg);
+    }
 
     & .symbol__side.symbol__rotate{
+        transform: rotateY(0deg);
+    }
+    & .symbol__side.perma__rotate{
         transform: rotateY(0deg);
     }
 
