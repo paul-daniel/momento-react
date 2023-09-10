@@ -1,3 +1,5 @@
+@import './sass/responsive';
+
 *,
 *::before,
 *::after{
@@ -7,5 +9,17 @@
 }
 
 html{
-  font-size: calc((100vw / 2320)*10);
+
+  @include media(">phone"){
+    font-size: calc((100vw / 1524)*10);
+  }
+
+  @include media(">=tablet"){
+    font-size: calc((100vw / 2380)*10);
+  }
+
+  
+  @include media("<=phone"){
+    font-size: calc((100vw / 1080)*10);
+  }
 }
